@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- https://github.com/196016Ruchakulkarni/Pricing_Landing_page_Rucha.git -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Pricing Page</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+    </style>
+
+</head>
+<body>
+
+        <header>
+            <h1>WordPress</h1>
+            <p>Choose the perfect plan for your needs</p>
+        </header>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">RK_wordpress</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#Home">Home</a></li>
+                <li><a href="#Plan">Plan</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="image-container" class="Home" id="Home">
+            <img src="Image/Img1.jpg" alt="Your Image" class="img1">
+            <img src="Image/Img3.jpg" alt="Small Image" class="small-image">
+            
+            <!-- <img src="Image/Img2.webp" alt="Image Error" class="img2"> -->
+
+            <div class="text-overlay">
+                <h2>A Domain Name for</h2>
+                <h2 class="2">Every Idea..</h2>
+             <div class="subtext"></div>
+                <h3>Choose your .com, .blog, or any of 350+ domain extensions. </h3>
+                <h3>Sign up for any WordPress.com paid plan, and your first year’s on us.</h3>
+
+                
+
+                <h2 class="domain">Find Your Domain:</h2>
+                <div class="container1">
+                    <form>
+                      <input type="search" placeholder="Search..." />
+                      <button type="submit">Search</button>
+                    </form>
+                  </div>
+
+                
+            </div>   
+            </div>
+        </div>
+
+    <div class="pricing-table" class="Plan" id="Plan">
+        <div class="plan">
+            <h2>Basic Plan</h2>
+            <p class="price">$19.99/month</p>
+            <ul class="features">
+                <li>Up to 5 projects</li>
+                <li>Basic customer support</li>    
+                <li>10 GB storage</li>
+            </ul>
+            <button class="btn">Select Plan</button>
+        </div>
+
+        <div class="plan">
+            <h2>Pro Plan</h2>
+            <p class="price">$39.99/month</p>
+            <ul class="features">
+                <li>Unlimited projects</li>
+                <li>Priority customer support</li>
+                <li>25 GB storage</li>
+                <li>Advanced analytics</li>
+            </ul>
+            <button class="btn">Select Plan</button>
+        </div>
+
+        <div class="plan">
+            <h2>Enterprise Plan</h2>
+            <p class="price">$99.99/month</p>
+            <ul class="features">
+                <li>Unlimited projects and users</li>
+                <li>24/7 premium support</li>
+                <li>Custom integrations</li>
+            </ul>
+            <button class="btn">Select Plan</button>
+        </div>
+    </div>
+
+    <header class="About" id="About">
+        <h3>About Us</h3>
+
+    </header>
+
+    <main>
+        <h3>Our Mission</h3>
+        <h4>Your website. Your blog. Your store.</h4>
+
+        <div>WordPress powers more than 43% of the web. Join the community. We’re committed to helping you succeed.</div>
+
+        <h3>Our Network</h3>
+        <p> WordPress.com is part of a community of creators, bloggers, business owners, community organizers, our supportive people, and customers like you.</p>
+
+        <div class="headline">
+            <h5>We’re a hosted version of the open source software, WordPress. Because when you have the freedom to create, 
+            express yourself, and earn money online, the impossible becomes business as usual.</h5>
+        </div>
+
+        <p>Do You Want To continue With Us</p>
+        <label class="toggle">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-off="NO" data-on="YES"></span>
+            <span class="toggle-handle"></span>
+         </label>
+
+    </main>
+
+    <header class="Contact" id="Contact">
+        <h3>Contact Us</h3>
+
+    </header>
+
+    <script>
+        function redirectToHomePage() {
+ 
+            window.location.href="price1.html";
+            return false;
+        }
+    </script>
+
+
+    <section class="contact">
+        <form action="#Home" method="post" onsubmit="return redirectToHomePage();">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+
+</body>
+</html>
